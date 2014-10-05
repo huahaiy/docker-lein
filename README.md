@@ -1,4 +1,4 @@
-docker-clojure
+docker-lein
 ==============
 
-Docker image for Clojure 
+Docker image for running Clojure application using lein 
