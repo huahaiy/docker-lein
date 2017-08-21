@@ -1,5 +1,5 @@
 #
-# Use lein to run Clojure application 
+# Use lein to run Clojure application
 #
 # Version     0.1
 #
@@ -11,18 +11,13 @@ MAINTAINER Huahai Yang <hyang@juji.io>
 ENV LEIN_ROOT true
 
 RUN \
-  echo "===> download leiningen..."  && \ 
+  echo "===> download leiningen..."  && \
   wget -q -O /usr/bin/lein \
     https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein && \
   chmod +x /usr/bin/lein && \
   \
   \
-  echo "===> get dependencies..."  && \ 
-  lein 
-
-VOLUME ["/srv/app"]
-
-WORKDIR /srv/app
+  echo "===> get dependencies..."  && \
+  lein
 
 ENTRYPOINT ["lein"]
-
