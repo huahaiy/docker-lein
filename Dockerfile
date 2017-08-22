@@ -11,6 +11,7 @@ MAINTAINER Huahai Yang <hyang@juji.io>
 ENV LEIN_ROOT true
 
 RUN \
+  apt-get update && \
   apt-get install ansible && \
   echo "===> download leiningen..."  && \
   wget -q -O /usr/bin/lein \
