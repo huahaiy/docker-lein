@@ -13,8 +13,6 @@ ENV LEIN_ROOT true
 RUN \
   apt-get update && \
   apt-get install -y --force-yes ansible && \
-  echo "pw4dev" > /.avp && \
-  chmod 600 /.avp && \
   echo "===> download leiningen..."  && \
   wget -q -O /usr/bin/lein \
     https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein && \
