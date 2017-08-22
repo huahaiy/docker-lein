@@ -1,7 +1,7 @@
 #
 # Use lein to run Clojure application
 #
-# Version     0.1
+# Version     0.2
 #
 
 FROM huahaiy/oracle-java
