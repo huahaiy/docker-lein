@@ -12,7 +12,7 @@ ENV LEIN_ROOT true
 
 RUN \
   apt-get update && \
-  apt-get install ansible && \
+  apt-get install -y --force-yes ansible && \
   echo "===> download leiningen..."  && \
   wget -q -O /usr/bin/lein \
     https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein && \
