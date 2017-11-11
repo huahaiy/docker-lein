@@ -1,14 +1,14 @@
 #
 # Use lein to run Clojure application as a user "app"
 #
-# Version     0.5
+# Version     0.6
 #
 
 FROM huahaiy/oracle-java
 
 MAINTAINER Huahai Yang <hyang@juji.io>
 
-#ENV LEIN_ROOT true
+ENV LEIN_ROOT true
 
 RUN \
   apt-get update && \
@@ -27,4 +27,4 @@ RUN \
 
 #USER app
 
-ENTRYPOINT ["lein"]
+#ENTRYPOINT ["lein"]
